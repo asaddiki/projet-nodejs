@@ -1,0 +1,11 @@
+GET http://localhost:3000/commentaires
+
+GET http://localhost:3000/commentaires/1
+
+POST http://localhost:3000/commentaires
+Content-Type: application/json
+
+{
+  "title": "Nouveau commentaire",
+  "content": "Contenu du commentaire",
+}
