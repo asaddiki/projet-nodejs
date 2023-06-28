@@ -1,11 +1,45 @@
+### GET /commentaires
+###
 GET http://localhost:3000/commentaires
+Content-Type: application/json
 
+###
+
+###
+### GET /commentaires/{id}
+###
 GET http://localhost:3000/commentaires/1
+Content-Type: application/json
 
+###
+
+###
+### POST /commentaires
+###
 POST http://localhost:3000/commentaires
 Content-Type: application/json
 
 {
-  "title": "Nouveau commentaire",
-  "content": "Contenu du commentaire",
+  "email": "j.hommane@gmail.com",
+  "contenu": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 }
+
+###
+
+###
+### PATCH /commentaires/{id}
+###
+PATCH http://localhost:3000/commentaires/1
+Content-Type: application/json
+
+{
+  "contenu": "Updated content"
+}
+
+###
+
+###
+### DELETE /commentaires/{id}
+###
+DELETE http://localhost:3000/commentaires/1
+Content-Type: application/json

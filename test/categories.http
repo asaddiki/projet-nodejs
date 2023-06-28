@@ -1,11 +1,44 @@
+### GET /categories
+###
 GET http://localhost:3000/categories
+Content-Type: application/json
 
+###
+
+###
+### GET /categories/{id}
+###
 GET http://localhost:3000/categories/1
+Content-Type: application/json
 
+###
+
+###
+### POST /categories
+###
 POST http://localhost:3000/categories
 Content-Type: application/json
 
 {
-  "title": "Nouvelle catégorie",
-  "content": "Contenu de la catégorie",
+  "nom": "Technologie"
 }
+
+###
+
+###
+### PATCH /categories/{id}
+###
+PATCH http://localhost:3000/categories/1
+Content-Type: application/json
+
+{
+  "nom": "Informatique"
+}
+
+###
+
+###
+### DELETE /categories/{id}
+###
+DELETE http://localhost:3000/categories/1
+Content-Type: application/json

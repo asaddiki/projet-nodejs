@@ -1,12 +1,42 @@
-GET http://localhost:3000/articles
+### Get All Articles
+
+GET http://localhost:3000/articles?take=10&skip=0
+
+###
+
+### Get Article by ID
 
 GET http://localhost:3000/articles/1
+
+###
+
+### Create New Article
 
 POST http://localhost:3000/articles
 Content-Type: application/json
 
 {
-  "title": "Nouvel article",
-  "content": "Contenu de l'article",
-  "author": "John Doe"
+  "title": "New Article",
+  "content": "This is a new article.",
+  "authorId": 1
 }
+
+###
+
+### Update Article
+
+PATCH http://localhost:3000/articles/1
+Content-Type: application/json
+
+{
+  "title": "Updated Article",
+  "content": "This article has been updated."
+}
+
+###
+
+### Delete Article
+
+DELETE http://localhost:3000/articles/1
+
+###
